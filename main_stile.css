@@ -1,0 +1,395 @@
+
+* {box-sizing: border-box;}
+
+.header {
+    padding: 10px 5px;
+     background: linear-gradient(45deg, rgb(255, 225, 170), rgb(255, 205, 131));
+     border-radius: 20px;
+     /* display: inline-block; */
+     overflow:auto;
+ }
+
+.header logo{
+    float: left;
+}
+
+.header img{
+    width: 75px;
+    height: auto;
+}
+
+.header a
+{
+    float: right; 
+    border-radius: 20px;
+    background-color: #deb887;
+    padding: 10px 5px;
+    margin: 10px;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(255, 238, 215);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.header a:hover{
+    background-color:rgb(119, 101, 78);
+    color:rgb(169, 158, 143);
+}
+
+.header input
+{
+    float:right;
+    height: 55px;
+    width: 35%;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 10px 5px;
+    margin: 10px;
+    background-color: rgb(255, 238, 215);
+    background-image: url('search.ico');
+    background-position: 15px 50%; 
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    padding-left: 45px;
+    padding-top: 12px;
+}
+
+.news 
+{
+    padding: 5px 5px;
+    border:3px solid #deb887;
+    border-radius: 20px;
+    width: 300px;
+    height: min-content;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+.left-panel
+{
+    height: min-content;
+    float:left;
+}
+
+.news h1 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(119, 101, 78);
+    size: 10px;
+    border-bottom: 2px solid;
+    border-bottom-color: #deb887;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+.filters h1 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(119, 101, 78);
+    size: 10px;
+    border-bottom: 2px solid;
+    border-bottom-color: #deb887;
+    text-align: center;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+
+.news p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(119, 101, 78);
+    size: 5px;
+    text-align: left;
+    margin-top: 1px;
+}
+
+.filters
+{
+    padding: 5px 5px;
+    border:3px solid #deb887;
+    border-radius: 20px;
+    width: 300px;
+    height: min-content;
+    margin: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 750px) {
+    .news
+    {
+        width: 100%;
+        float: none;
+    }
+    .filters
+    {
+        width: 100%;
+        float: none;
+    }
+    .left-panel
+    {
+        height: min-content;
+        float:none;
+        flex-grow: 1;
+    }
+    .catalogue
+    {
+        float:none;
+        flex-grow: 1;
+    }
+    .bottom-content
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    .header input
+    {
+        width: 95%;
+        margin-left: 10px;
+    }
+}
+
+@media handheld {
+    .news
+    {
+        width: 100%;
+        float: none;
+    }
+    .filters
+    {
+        width: 100%;
+        float: none;
+    }
+    .left-panel
+    {
+        height: min-content;
+        float:none;
+        flex-grow: 1;
+    }
+    .bottom-content
+    {
+        flex-wrap: wrap;
+    }
+}
+
+
+.checkboxes
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.checkbox-label
+{
+    flex-grow: 1;
+    float:left;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.checkbox-text
+{
+    float:center;
+    padding: 5px;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.2s;
+    border:3px solid #deb887;
+    color: rgb(119, 101, 78);
+    font-family: Arial, Helvetica, sans-serif;
+    size: 20px;
+    font-weight: bold;
+}
+
+.checkbox-text:hover
+{
+    color: white;
+    background-color: #deb887;
+}
+
+input[type=checkbox]{
+    display: none;
+  }
+
+input[type=checkbox]:checked ~ div {
+    background-color: rgb(163, 139, 108);
+    color: white;
+  }
+
+  .checkbox-text p{
+    text-align: center;
+    margin: 5px;
+}
+
+.bottom-content
+{
+    display: flex;
+    width: 100%;
+}
+
+.catalogue
+{
+    /* border:3px solid #deb887; */
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    flex-grow: 1;
+    margin-top: 10px;
+    padding: 0px;
+    justify-content: space-around;
+}
+
+.product
+{
+    padding: 5px 5px;
+    border:3px solid #deb887;
+    border-radius: 20px;
+    flex: 1 0 300px;
+    height: 350px;
+    float: left;
+    text-decoration: none;
+    margin-bottom: 10px;
+    max-width: 350px;
+}
+
+.catalogue a:hover
+{
+    background-color: #f0e8dd;
+}
+
+.product h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: rgb(119, 101, 78);
+    border-bottom: 2px solid;
+    border-bottom-color: #deb887;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.product img
+{
+    width: 98%;
+    height: 60%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.price
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    margin-left: 5px;
+    float:left;
+}
+
+.flavor
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    float:right;
+}
+
+.records
+{
+    display: flexbox;
+    flex: wrap;
+}
+
+.weight
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(119, 101, 78);
+    margin-top: 5px;
+    margin-right: 15px;
+    float:right;
+    width: 100px;
+    text-align: right;
+}
+
+.pages
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:black;
+    transition: 0.2s;
+}
+
+
+
+.page-selector
+{
+    float:center;
+    background-color: #deb887;
+    border:3px solid black;
+    border-radius: 20px;
+}
+
+.page-selector p
+{
+    float:left;
+    padding: 10px 5px;
+    margin:0px 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+.page-selector input
+{
+    float:left;
+    padding: 10px 5px;
+    width: 35px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border-width: 0px;
+    transition: 0.2s;
+}
+
+.page-selector input:hover
+{
+    background-color:rgb(119, 101, 78);
+}
+
+#left-button
+{
+    border-radius: 20px 0px 0px 20px;
+}
+
+#right-button
+{
+    border-radius: 0px 20px 20px 0px;
+}
