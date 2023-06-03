@@ -256,6 +256,7 @@ input[type=checkbox]:checked ~ div {
     float: left;
     text-decoration: none;
     margin-bottom: 10px;
+    margin-right: 3px;
     max-width: 350px;
 }
 
@@ -392,4 +393,307 @@ input[type=checkbox]:checked ~ div {
 #right-button
 {
     border-radius: 0px 20px 20px 0px;
+}
+/* Main page styles ended 
+
+Product Description started*/
+
+.nice-pictures
+{
+    margin-top: 20px;
+    padding: 5px 5px;
+    border:3px solid #deb887;
+    border-radius: 20px;
+    width: 800px;
+    height: min-content;
+    margin: 10px;
+    flex: 1 1 60%;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.nice-pictures img
+{
+    display: block;
+    width: 70%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    clear: both;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.nice-pictures h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: rgb(119, 101, 78);
+    border-bottom: 2px solid;
+    border-bottom-color: #deb887;
+    text-align: left;
+    margin-left: 15px;
+
+    
+}
+
+.Pictures-Heading
+{
+    float:left;
+}
+
+.Pictures-Characteristics
+{
+    float:right;
+}
+
+.Pictures-Characteristics p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    float:left;
+    margin-right: 10px;
+}
+
+.buy
+{
+    margin-top: 20px;
+    padding: 5px 5px;
+    border:3px solid #deb887;
+    border-radius: 20px;
+    width: 300px;
+    height: min-content;
+    margin: 10px;
+    flex: 1 1 30%;
+    display: block;
+    flex-wrap: wrap;
+    float:right;
+}
+
+.bottom-content-description
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.desctiption
+{
+    clear:both;
+    display: block;
+    float:left;
+    flex: 1 1 60%;
+    margin-top: 20px;
+    padding: 5px 5px;
+    border:3px solid #deb887;
+    border-radius: 20px;
+    height: min-content;
+    margin: 10px;
+}
+
+.empty
+{
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+.desctiption h1
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: rgb(119, 101, 78);
+    border-bottom: 2px solid;
+    border-bottom-color: #deb887;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.desctiption p
+{
+    text-align: left;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 750px) {
+    .desctiption
+    {
+        flex: 1 1 100%;
+    }
+
+    .nice-pictures
+    {
+        flex: 1 1 100%;
+    }
+    .buy
+    {
+        flex: 1 1 100%;
+    }
+    .nice-pictures img
+    {
+        width: 90%;
+        float: none;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (max-width: 446px) {
+    .Pictures-Characteristics
+    {
+        float: left;
+        margin-left: 15px;
+    }
+}
+
+
+@media handheld {
+    .desctiption
+    {
+        flex: 1 1 100%;
+    }
+
+    .nice-pictures
+    {
+        flex: 1 1 100%;
+    }
+    .buy
+    {
+        flex: 1 1 100%;
+    }
+    .nice-pictures img
+    {
+        width: 90%;
+        float: none;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+}
+
+.pages
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:black;
+    transition: 0.2s;
+}
+
+
+.amount-selector
+{
+    display: block;
+    float:left;
+    background-color: #deb887;
+    border:3px solid black;
+    border-radius: 20px;
+}
+
+.amount-selector p
+{
+    float:left;
+    padding: 10px 5px;
+    margin:0px 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+}
+
+.amount-selector input
+{
+    float:left;
+    padding: 10px 5px;
+    width: 35px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border-width: 0px;
+    transition: 0.2s;
+}
+
+.amount-selector input:hover
+{
+    background-color:rgb(119, 101, 78);
+}
+
+.price-page
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    margin-left: 5px;
+    float:right;
+}
+
+@media screen and (max-width: 881px) {
+.price-page
+{
+    float:left;
+}
+}
+
+@media screen and (max-width: 750px)
+{
+    .price-page
+{
+    float:right;
+}
+}
+
+@media handheld
+{
+    .price-page
+{
+    float:right;
+}
+}
+
+.price-page p
+{
+    margin: 0px;
+}
+
+.buy-thing
+{
+    display: block;
+    clear: all;
+    float: right;
+    width: 100%; 
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.buy-button
+{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #deb887;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(255, 238, 215);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.buy-thing input:hover{
+    background-color:rgb(119, 101, 78);
+    color:rgb(169, 158, 143);
 }
