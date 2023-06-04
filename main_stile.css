@@ -461,6 +461,7 @@ Product Description started*/
 {
     margin-top: 20px;
     padding: 5px 5px;
+    padding-top: 15px;
     border:3px solid #deb887;
     border-radius: 20px;
     width: 300px;
@@ -602,6 +603,20 @@ Product Description started*/
     border-radius: 20px;
 }
 
+.Availability p
+{
+    clear: both;
+    float:left;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: auto;
+    text-align: left;
+}
+
 .amount-selector p
 {
     float:left;
@@ -657,7 +672,6 @@ Product Description started*/
     float:right;
 }
 }
-
 @media handheld
 {
     .price-page
@@ -694,6 +708,242 @@ Product Description started*/
 }
 
 .buy-thing input:hover{
+    background-color:rgb(119, 101, 78);
+    color:rgb(169, 158, 143);
+}
+
+/* Shopping cart page */
+
+.bottom-content-shoppingcart
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.list
+{
+    margin-top: 20px;
+    padding: 5px 5px;
+    border:3px solid #deb887;
+    border-radius: 20px;
+    height: min-content;
+    margin: 10px;
+    margin-left: 0px;
+    flex: 1 1 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-product
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #deb887;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.list-product p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+}
+
+.cart-heading
+{
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+
+}
+
+.cart-heading h1 
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(119, 101, 78);
+    size: 10px;
+    text-align: left;
+    padding-left: 15px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid;
+    border-bottom-color: #deb887;
+}
+
+.buy-all
+{
+    margin-top: 20px;
+    padding: 5px 5px;
+    border:3px solid #deb887;
+    border-radius: 20px;
+    width: 300px;
+    height: min-content;
+    margin: 10px;
+    margin-left: 0px;
+    flex: 1 1 30%;
+    display: flex;
+    flex-wrap: wrap;
+    float:right;
+}
+
+.cart-amount
+{
+    display: flex;
+    float:right;
+    background-color: #deb887;
+    border:3px solid black;
+    border-radius: 20px;
+    height: 80%;
+    margin-top:auto;
+}
+
+.cart-amount-selector p
+{
+    /* float:left; */
+    padding: 5px 5px;
+    margin:0px 5px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+}
+
+.cart-amount-selector input
+{
+    float:left;
+    padding: auto;
+    width: 35px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border-width: 0px;
+    transition: 0.2s;
+    height: 100%;
+}
+
+.cart-amount-selector input:hover
+{
+    background-color:rgb(119, 101, 78);
+}
+
+.cart-price
+{
+    display: flex;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    float:right;
+}
+
+.cart-name
+{
+    flex: 0%;
+    display: flex;
+    float:left;
+}
+
+.cart-name p{
+    text-align: left;
+}
+
+@media screen and (max-width: 750px)
+{
+.list
+{
+    float: none;
+    flex: none;
+    width: 100%;
+}
+
+.buy-all
+{
+    flex: none;
+    float:none;
+    width: 100%;
+}
+}
+@media handheld
+{
+    .price-page
+{
+    float:right;
+}
+.list
+{
+    float: none;
+    flex: none;
+    width: 100%;
+}
+
+.buy-all
+{
+    flex: none;
+    float:none;
+    width: 100%;
+}
+}
+
+.total-price
+{
+    display: flex;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    float:right;
+}
+
+#total
+{
+    display: flex;
+    float: left;
+    flex: 1 1 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    float:right;
+}
+
+.pay
+{
+    display: block;
+    clear: all;
+    float: right;
+    width: 100%; 
+    margin-top: 15px;
+}
+
+.pay-button
+{
+    width: 100%;
+    border-radius: 15px;
+    background-color: #deb887;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:rgb(255, 238, 215);
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.pay input:hover{
     background-color:rgb(119, 101, 78);
     color:rgb(169, 158, 143);
 }
